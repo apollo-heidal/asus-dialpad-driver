@@ -1,9 +1,9 @@
 { lib
-, python311Packages
 , pkgs
 }:
 
 let
+  python311Packages = pkgs.python311Packages;
   # Define the Python packages required
   pythonPackages = pkgs.python311.withPackages (ps: with ps; [
     numpy
